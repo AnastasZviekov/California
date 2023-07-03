@@ -3,46 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>California</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    
+   <!--<link rel="stylesheet" href="css/owl.carousel.css">-->
+   <!--<link rel="stylesheet" href="css/owl.theme.default.css">-->
+
+   <!--<link rel="stylesheet" href="css/mobile.css">-->
+
+   <link rel="stylesheet" href="css/style.css">
+   <!-- <link rel="stylesheet" href="css/media.css">-->
+
 </head>
 <body>
-    <header>
+
+    <!--мобильное меню для экранов 800px и ниже!-->
+    <header class="cd-header">
+		<div class="header-wrapper">
+            <div class="container">
+                <div class="row">
+				<div class="col-xl-1 col-lg-1"><img src="images/logo.svg" alt="logo">
+			</div>
+            
+            <div class="col-1 col-xl-1 col-lg-1 col-md- 1  offset-7 offset-xl-9 offset-lg-9 offset-md-9 ">           
+                <img src="images/search.png" alt="search">
+                </div>
+                
+                <div class="col-1 col-xl-1 col-lg-1 col-md-1">
+                <a href="#"target="_blank"><img src="images/basket.png" alt="basket"></a>
+               </div> 
+            </div>
+        </div>
+			<div class="nav-but-wrap">
+				<div class="menu-icon hover-target">
+					<span class="menu-icon__line menu-icon__line-left"></span>
+					<span class="menu-icon__line"></span>
+					<span class="menu-icon__line menu-icon__line-right"></span>
+				</div>					
+			</div>					
+		</div>				
+	</header>
+
+	<div class="nav">
+		<div class="nav__content">
+			<ul class="nav__list">
+				<li class="nav__list-item active-nav"><a href="#" class="hover-target">ALL PRODUCTS</a></li>
+				<li class="nav__list-item"><a href="#" class="hover-target">SOLUTIONS</a></li>
+				<li class="nav__list-item"><a href="#" class="hover-target">ABOUT</a></li>
+				<li class="nav__list-item"><a href="#" class="hover-target">SUPPORT</a></li>
+			</ul>
+		</div>
+	</div>		
+
+
+    <!--Код для декстопного хедера!-->
+    <header class=dekstop_header>
         <nav>
         <div class="container">
             <div class="row justify-content-between align-items-center">
-                <div class="col-xl-1 col-lg-1 "><img src="images/logo.svg" alt="logo">
+                <div class="col-12 col-xl-1 col-lg-1 col-md-12 "><img src="images/logo.svg" alt="logo">
                 </div>
-                <div class="col-xl-2 col-lg-2 offset-xl-2 offset-lg-2">
-                    <a href="#">ALL PRODUCTS</a>
+                <div class="col-4 col-xl-2 col-lg-2 col-md-2 offset-xl-2 offset-lg-2 offset-md-2">
+                    <a href="#"target="_blank">ALL PRODUCTS</a>
                 </div>
-                <div class="col-xl-1 col-lg-1">
-                    <a href="#">SOLUTIONS</a>
+                <div class="col-4 col-xl-1 col-lg-1 col-md-1">
+                    <a href="#"target="_blank">SOLUTIONS</a>
                 </div>
-                <div class="col-xl-1 col-lg-1">
-                    <a href="#">ABOUT</a>
+                <div class="col-4 col-xl-1 col-lg-1 col-md-1 offset-md-1">
+                    <a href="#"target="_blank">ABOUT</a>
                 </div>
-                <div class="col-xl-1 col-lg-1">
-                    <a href="#">SUPPORT</a>
+                <div class="col-4 col-xl-1 col-lg-1 col-md-1">
+                    <a href="#"target="_blank">SUPPORT</a>
                 </div>   
         
-             
-                <div class="col-xl-1 col-lg-1 offset-xl-2 offset-lg-2">
+                <div class="col-4 col-xl-1 col-lg-1 col-md-2  offset-xl-1 offset-lg-1 offset-md-1 ">
                 
                 <img src="images/search.png" alt="search">
                 </div>
                 
-                <div class="col-xl-1 col-lg-1">
+                <div class="col-4 col-xl-1 col-lg-1 col-md-1">
                 
-                <img src="images/basket.png" alt="basket">
+                <a href="#"target="_blank"><img src="images/basket.png" alt="basket"></a>
                </div> 
             </nav>     
         </div>
     </header>
     <main>
+      
+       
         <section class="main_banner">
-            <div class="wrapper">
+            <div class="wrapper">          
+            <div class="owl-carousel">
                 <article>
                 <h1>The new phones are <br> here  take a look.</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -54,13 +110,14 @@
                 <div class="banner_img"><img src="images/main_banner.png" alt="main_banner">
                 </div>
             </div>
+            </div>
 
         </section>
 
         <section class="latest_offers">
             <div class="container">
                 <div class="row">
-                 <div class="col-xl-12 col-lg-12">
+                 <div class="col-12 col-xl-12 col-lg-12 col-md-12">
                  <h2>Shop our latest offers and categories</h2>
                  
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam,<br> tempor. Faucibus
@@ -68,66 +125,69 @@
                     </div>
                     </div>
                   
-                   <div class="row ">
-                    <div class="col-xl-6 col-lg-6 spacing">
+                   <div class="row gadjets ">
+                    <div class="col-12 col-xl-6 col-lg-6 col-md-6">
                     <article class="laptop">
                         <div>
                         <img src="images/laptop.png" alt="laptops">
                         </div>
+                        <div>
                         <p class="name_goods">Laptops</p>
-                        <h3>True Laptop Solution</h3>
+                        <h3>True Laptop <br> Solution</h3>
+                        </div>
                     </article>    
                     </div>
-                    <div class="col-xl-3 col-lg-3  spacing">  
+                    <div class="col-12 col-xl-3 col-lg-3 col-md-3">  
                         <article class="phones">
                         <div>      
                             <img src="images/phones.png" alt="phones">
-                        </div>                 
+                        </div> 
+                        <div>              
                             <p class="name_goods">Phones</p>
                             <h3>Your day to day life</h3>
+                        </div>  
                         </article>    
                         </div>
-                    <div class="col-xl-3 col-lg-3  spacing">
+                    <div class="col-12 col-xl-3 col-lg-3 col-md-3">
                         <article class="tab">
+                         <div>
                             <p class="name_goods">Tablet</p>
                             <h3>Empower your work</h3>
+                         </div>
                         <div>
                         <img src="images/tab.png" alt="tabs">
                         </div>
                     </article>   
                     </div>  
-                    <div class="col-xl-6 col-lg-6 d-flex">
-                        <article class="belt d-flex">
-                            
+
+                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 d-flex">
+                        <article class="belt d-flex">      
                            <div>    
                             <img src="images/belt.png" alt="belt">
-                        </div>
+                           </div>
                         <div>
                             <p class="name_goods">Watch</p>
                             <h3>Not just stylisht</h3>
                         </div>
-                        </article>  
-                            
-                         
+                        </article>                     
                         </div>                    
                    </div>
-            </div>
+                </div>
         </section>
-        <hr>
 
         <section class="most_selled">
             <div class="container">
                 <div class="row">
-                 <div class="col-xl-12 col-lg-12 text-center">
+                 <div class="col-12 col-xl-12 col-lg-12 col-md-12 text-center">
                    <h2>Save on our most selled items.</h2>
                 </div>
-                <div class="col-xl-12 col-lg-12 otext-center">
+                <div class="col-12 col-xl-12 col-lg-12 col-md-12 text-center">
                     <h6>Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</h6>
                 </div>
                 </div>
               
                <div class="row">
-                 <div class="col-xl-3 col-lg-3">
+                 <div class="col-6 col-xl-3 col-lg-3 col-md-4 ">
                 <article>
                     <div><img src="images/macbook.png" alt="Macbook_Pro"></div>
                      <h5>MacBook Pro 13</h5>
@@ -135,7 +195,7 @@
                      <div class="price">$ 1,200.00 USD</div>
                 </article>
                  </div>
-                 <div class="col-xl-3 col-lg-3">
+                 <div class="col-6 col-xl-3 col-lg-3 col-md-4">
                 <article>
                     <div><img src="images/smart_watch.png" alt="smart_watch"></div>
                      <h5>Smart Galaxy Watch 3</h5>
@@ -144,7 +204,7 @@
                 </article>
                  </div>
 
-                 <div class="col-xl-3 col-lg-3">
+                 <div class="col-6 col-xl-3 col-lg-3 col-md-4">
                 <article>
                     <div><img src="images/macbook_Air.png" alt="Macbook_Air"></div>
                      <h5>MacBook Air M1</h5>
@@ -153,7 +213,7 @@
                 </article>
                  </div>
 
-                <div class="col-xl-3 col-lg-3">
+                <div class="col-6 col-xl-3 col-lg-3 col-md-4">
                 <article>
                     <div><img src="images/iPad.png" alt="iPad"></div>
                      <h5>iPad</h5>
@@ -162,8 +222,7 @@
                 </article>
                  </div>
 
-           
-                 <div class="col-xl-12 col-lg-12 text-center">
+                 <div class="col-12 col-xl-12 col-lg-12 col-md-12 text-center">
                    <h2>See the best around here</h2> 
                  </div>
                 <div class="col-xl-12 col-lg-12 text-center">
@@ -171,9 +230,9 @@
                  </div>
                 </div>
 
-
-            <div class="row best_around">
-             <div class="col-xl-4 col-lg-4">
+            <div class="row best_around ">
+                    
+             <div class="col-12 col-xl-4 col-lg-4 col-md-6">
                 <article>
                     <p>Smart light bulb pack</p>
                     <h4>Latest and gratest</h4>
@@ -183,8 +242,8 @@
                     <div><img src="images/watch.png" alt="watch"></div>
                 </article> 
                  </div> 
-                 
-                 <div class="col-xl-4 col-lg-4">
+               
+                 <div class="col-12 col-xl-4 col-lg-4 col-md-6">
                  <article>
                     <p>Smart light bulb pack</p>
                     <h4>Best selling</h4>
@@ -194,8 +253,8 @@
                     <div><img src="images/best_sell_phone.png" alt="best_sell"></div>
                 </article> 
                  </div>
-                 
-                 <div class="col-xl-4 col-lg-4">
+       
+                 <div class="col-12 col-xl-4 col-lg-4 col-md-6">
                  <article>
                     <p>Smart light bulb pack</p>
                     <h4>Every product</h4>
@@ -205,9 +264,7 @@
                     <div><img src="images/every_product_image.png" alt="every_product"></div>
                 </article> 
                  </div>   
-
-                </div>    
-            
+                </div>     
            </div>
         </section>
 
@@ -215,19 +272,19 @@
 
         <div class="container">
             <div class="row">
-              <div class="col-xl-12 col-lg-12 text-center">
+              <div class="col-12 col-xl-12 col-lg-12 col-md-12 text-center">
                <h2>Ideas have a place here</h2>
               </div>
-                <div class="col-xl-12 col-lg-12 text-center">
+                <div class="col-12 col-xl-12 col-lg-12 col-md-12 text-center">
                 <h6>Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</h6>
                 </div>
         </div>
         <div class="row ">
-            <div class="col-xl-6 col-lg-6">
+            <div class="col-12 col-xl-6 col-lg-6 col-md-12">
               <img src="images/books.png" alt="books">
             </div>
 
-            <div class="col-xl-6 col-lg-6">
+            <div class="col-12 col-xl-6 col-lg-6 col-md-12">
                 <article>
                 <p>We Make It Easy To Find The Great Design Talent, Easier...</p>
                 <p>Road Design Handbook For The International Road...</p>
@@ -236,8 +293,8 @@
                 </article>
             </div>
             </div>
-            <div class="col-xl-12 col-lg-12 text-center">
-                <a href="#">See All <img src="images/arrow.svg" alt="#"> </a>
+            <div class="col-12 col-xl-12 col-lg-12 col-md-12 text-center">
+                <a href="#" class="arrow">See All </a>
             </div>
          </div>
 
@@ -283,6 +340,7 @@
             <form name = "sign_up_action= #" method="post" class="sign_up_form">
                 <div>
                     <input type="text" name = "Sign_Up" placeholder="Your email" id="your_email">
+               <div class="sign_up_button"> <a href="#">Sign up</a></div>
                 </div>
              </form>
         </article>
@@ -292,8 +350,8 @@
     <footer>
       
     <div class="container">
-        <div class="row text-left">
-            <div class="col-xl-3 col-lg-3">
+        <div class="row">
+            <div class="col-6 col-xl-2 col-lg-2 col-md-4 text-left">
                 <img src="images/logo.svg" alt="logo">
                 <div><a href="#">Sign up for texts to be notified about our best offers on
                      the perfect gifts.
@@ -301,44 +359,44 @@
               </div>
             </div>
 
-            <div class="col-xl-2 col-lg-2 offset-xl-1 offset-lg-1">
+            <div class="col-6 col-xl-2 col-lg-2 col-md-3 offset-xl-1 offset-lg-1">
             <p>All products</p>
             <ul>
                 <li>
-                    <a href="#">Phones</a>
+                    <a href="#"target="_blank">Phones</a>
                 </li>
                 <li>
-                    <a href="#">Watch</a>
+                    <a href="#"target="_blank"target="_blank">Watch</a>
                 </li>
                 <li>
-                    <a href="#">Tablet</a>
+                    <a href="#"target="_blank">Tablet</a>
                 </li>
                 <li>
-                    <a href="#">Laptop</a>
+                    <a href="#"target="_blank">Laptop</a>
                 </li>
             </ul>
             </div>
 
-            <div class="col-xl-1 col-lg-1">
+            <div class="col-6 col-xl-1 col-lg-1 col-md-3">
             <p>Company</p>
             <ul>
                 <li>
                     <a href="#">About</a>
                 </li>
                 <li>
-                    <a href="#">Support</a>
+                    <a href="#"target="_blank">Support</a>
                 </li>
             </ul>
             </div>
     
-            <div class="col-xl-2 col-lg-2 offset-xl-1 offset-lg-1">
+            <div class="col-6 col-xl-2 col-lg-2 col-md-4 offset-xl-1 offset-lg-1">
             <p>Support</p>
             <ul>
                 <li>
-                    <a href="#">Style Guide</a>
+                    <a href="#"target="_blank">Style Guide</a>
                 </li>
                 <li>
-                    <a href="#">Licensing</a>
+                    <a href="#"target="_blank">Licensing</a>
                 </li>
                 <li>
                     <a href="#">Change Log</a>
@@ -349,20 +407,20 @@
             </ul>
             </div>
 
-            <div class="col-xl-2 col-lg-2 offset-xl-1 offset-lg-1">
+            <div class="col-6 col-xl-2 col-lg-2 col-md-4 offset-xl-1 offset-lg-1">
             <p>Follow Us</p>
             <ul>
                 <li>
-                    <a href="#">Instagram</a>
+                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
                 </li>
                 <li>
-                    <a href="#">Facebook</a>
+                    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
                 </li>
                 <li>
-                    <a href="#">Linkedin</a>
+                    <a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
                 </li>
                 <li>
-                    <a href="#">Facebook</a>
+                    <a href="https://www.youtube.com/"target="_blank">Youtube</a>
                 </li>
             </ul>
             </div>
@@ -370,19 +428,29 @@
         </div>
 
         <div class="row d-flex justify-content-between footer_bottom text-center">
-            <div class="col-xl-2 col-lg-2">
-                <div>Made By: Azwedo</div>
+            <div class="col-12 col-xl-3 col-lg-3 col-md-3">
+                <div class="arrow">Made By: Azwedo</div>
             </div>
-            <div class="col-xl-3 col-lg-3 offset-xl-7 offset-lg-7">
-                <div>Powered By: Webflow</div>
+            <div class="col-12 col-xl-3 col-lg-3 col-md-3 offset-xl-6 offset-lg-6">
+                <div class="arrow">Powered By: Webflow</div>
             </div>
         </div>
-    </div>
+      </div>
 
     </footer>
-<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
-crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.7.0.js"
+    integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+    
 <script src="js/bootstrap.bundle.js"></script>
+
+<script src="js/owl.carousel.js"></script>
+<script src="js/scripts.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+
+
 </body>
 </html>
